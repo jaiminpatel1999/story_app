@@ -1,24 +1,597 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tus-HA-IN2">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="Reg-Li-Zj0">
+            <objects>
+                <viewController id="XDQ-ve-oSA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E4L-Tx-5fi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="hlK-8i-cQE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Cdq-bW-f5S">
+                                <rect key="frame" x="85" y="214" width="150" height="140"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6i-QU-moA">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Ihx-J1-dQH"/>
+                                            <constraint firstAttribute="width" constant="150" id="WrY-uQ-1j4"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="The Lion &amp; the Mouse">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            <color key="baseBackgroundColor" red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="7g4-dm-ois" kind="show" id="bvo-83-7uF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49R-Og-tDz">
+                                        <rect key="frame" x="0.0" y="90" width="150" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="dz2-iB-gq4"/>
+                                            <constraint firstAttribute="height" constant="50" id="ls0-e6-RkM"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="The Tortoise and the Geese">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" systemColor="systemTealColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Uhx-yE-mVS" kind="show" id="C7C-cN-nQF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="h2x-Z4-Fct"/>
+                                    <constraint firstAttribute="height" constant="140" id="sIj-Da-SSL"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hOl-88-QrZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hlK-8i-cQE" secondAttribute="trailing" id="OrQ-WO-OLv"/>
+                            <constraint firstAttribute="bottom" secondItem="hlK-8i-cQE" secondAttribute="bottom" id="Ove-uP-baa"/>
+                            <constraint firstItem="hlK-8i-cQE" firstAttribute="leading" secondItem="hOl-88-QrZ" secondAttribute="leading" id="cdc-Ze-3m9"/>
+                            <constraint firstItem="Cdq-bW-f5S" firstAttribute="centerX" secondItem="E4L-Tx-5fi" secondAttribute="centerX" id="tUF-jD-hMW"/>
+                            <constraint firstItem="Cdq-bW-f5S" firstAttribute="centerY" secondItem="E4L-Tx-5fi" secondAttribute="centerY" id="xAa-dH-kOo"/>
+                            <constraint firstItem="hlK-8i-cQE" firstAttribute="top" secondItem="E4L-Tx-5fi" secondAttribute="top" id="xhf-sz-lzB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5sk-UF-n4z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hZf-PX-SsQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1114" y="-673"/>
+        </scene>
+        <!--Page 1-->
+        <scene sceneID="pFu-Kp-TIh">
+            <objects>
+                <viewController id="7g4-dm-ois" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EBj-R9-fOY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="P5u-Q3-q5k">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cw8-Rn-bUW">
+                                <rect key="frame" x="168" y="322" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="v1h-6c-VzT">
+                                <rect key="frame" x="4" y="175" width="312" height="218"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="312" id="oi0-G4-cid"/>
+                                    <constraint firstAttribute="height" constant="218" id="qMk-T1-Y6o"/>
+                                </constraints>
+                                <string key="text">A Lion lay asleep in the forest, his great head resting on his paws. A timid little Mouse came upon him unexpectedly, and in her fright and haste to get away, ran across the Lion's nose. Roused from his nap, the Lion laid his huge paw angrily on the tiny creature to kill her.
+
+"Spare me!" begged the poor Mouse. "Please let me go and some day I will surely repay you."
+
+The Lion was much amused to think that a Mouse could ever help him. But he was generous and finally let the Mouse go.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Lion &amp; the Mouse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPF-qf-sfg">
+                                <rect key="frame" x="4" y="81" width="312" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="312" id="Ywu-8b-Kcu"/>
+                                    <constraint firstAttribute="height" constant="26" id="sTP-Pe-u4f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NG8-MO-m4j"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="P5u-Q3-q5k" firstAttribute="trailing" secondItem="NG8-MO-m4j" secondAttribute="trailing" id="DB3-kw-dK1"/>
+                            <constraint firstAttribute="bottom" secondItem="P5u-Q3-q5k" secondAttribute="bottom" id="E2x-DM-6Py"/>
+                            <constraint firstItem="P5u-Q3-q5k" firstAttribute="leading" secondItem="NG8-MO-m4j" secondAttribute="leading" id="KZh-or-i9S"/>
+                            <constraint firstItem="v1h-6c-VzT" firstAttribute="centerX" secondItem="EBj-R9-fOY" secondAttribute="centerX" id="bi0-qM-EHW"/>
+                            <constraint firstItem="v1h-6c-VzT" firstAttribute="centerY" secondItem="EBj-R9-fOY" secondAttribute="centerY" id="egE-IW-UI2"/>
+                            <constraint firstItem="v1h-6c-VzT" firstAttribute="top" secondItem="xPF-qf-sfg" secondAttribute="bottom" constant="68" id="fBi-3H-so3"/>
+                            <constraint firstItem="xPF-qf-sfg" firstAttribute="centerX" secondItem="EBj-R9-fOY" secondAttribute="centerX" id="rdj-6t-erH"/>
+                            <constraint firstItem="P5u-Q3-q5k" firstAttribute="top" secondItem="EBj-R9-fOY" secondAttribute="top" id="sHj-iu-YEX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page 1" id="9ja-nJ-2TR">
+                        <barButtonItem key="rightBarButtonItem" title="Next Page" id="7k1-nC-v8u">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="9iF-we-eDk" kind="show" id="upV-5L-5SB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zgG-Hz-ONi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2023.6641221374045" y="-1109.1549295774648"/>
+        </scene>
+        <!--Page 2-->
+        <scene sceneID="OxB-c1-GHt">
+            <objects>
+                <viewController id="9iF-we-eDk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OqK-fw-nrl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="3y3-cj-nII">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="jxb-bY-qgi">
+                                <rect key="frame" x="4" y="175" width="312" height="218"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="218" id="6uf-j1-9da"/>
+                                    <constraint firstAttribute="width" constant="312" id="p3D-LO-MWn"/>
+                                </constraints>
+                                <string key="text">Some days later, while stalking his prey in the forest, the Lion was caught in the toils of a hunter's net. Unable to free himself, he filled the forest with his angry roaring. The Mouse knew the voice and quickly found the Lion struggling in the net. Running to one of the great ropes that bound him, she gnawed it until it parted, and soon the Lion was free.
+
+"You laughed when I said I would repay you," said the Mouse. "Now you see that even a Mouse can help a Lion."</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Jo-eV-1Dg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3y3-cj-nII" secondAttribute="bottom" id="NrU-nb-Gx9"/>
+                            <constraint firstAttribute="trailing" secondItem="3y3-cj-nII" secondAttribute="trailing" id="XTh-HY-DMH"/>
+                            <constraint firstItem="3y3-cj-nII" firstAttribute="top" secondItem="OqK-fw-nrl" secondAttribute="top" id="Xle-yC-D5g"/>
+                            <constraint firstItem="jxb-bY-qgi" firstAttribute="centerY" secondItem="OqK-fw-nrl" secondAttribute="centerY" id="hKA-ik-53H"/>
+                            <constraint firstItem="3y3-cj-nII" firstAttribute="leading" secondItem="OqK-fw-nrl" secondAttribute="leading" id="i5U-n6-HKS"/>
+                            <constraint firstItem="jxb-bY-qgi" firstAttribute="centerX" secondItem="OqK-fw-nrl" secondAttribute="centerX" id="r6W-zp-jls"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page 2" id="PJe-Tc-R6j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fo6-YB-eZA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2801" y="-1109"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5EN-W0-4xe">
+            <objects>
+                <navigationController id="tus-HA-IN2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L9s-y6-GmG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="x4l-gv-Esd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bNd-Sp-jKO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-732" y="4"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="story_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="wrU-hn-f1C">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mE-lC-ppG">
+                                <rect key="frame" x="259" y="523" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="asp-Jh-eHM"/>
+                                    <constraint firstAttribute="width" constant="45" id="rgf-K4-9co"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="i" cornerStyle="capsule">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="tka-lX-oTM" kind="show" id="tDL-5x-GUN"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="wH2-Yl-KIt">
+                                <rect key="frame" x="85" y="214" width="150" height="140"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7U-G2-Aem">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Kew-x0-wi1"/>
+                                            <constraint firstAttribute="width" constant="150" id="P8n-0F-a2c"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" backgroundImage="2"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Level 1">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="XDQ-ve-oSA" kind="show" id="24c-Wm-rwd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijE-y9-8RQ">
+                                        <rect key="frame" x="0.0" y="90" width="150" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="H1M-qd-CLC"/>
+                                            <constraint firstAttribute="height" constant="50" id="PCF-aR-1uf"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Level 2">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="5sY-RB-fHv" kind="show" id="Duy-MN-4aA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="4Ay-k4-TQO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="140" id="6rP-gS-ttv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Eif-Yf-D3p"/>
+                                    <constraint firstAttribute="height" constant="140" id="UTf-XD-jjF"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4HI-Yb-at8">
+                                <rect key="frame" x="64" y="95" width="192" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="C4X-Qs-tFP"/>
+                                    <constraint firstAttribute="height" constant="39" id="iJe-sq-mvg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="38"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wrU-hn-f1C" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DsJ-0g-DHG"/>
+                            <constraint firstItem="wH2-Yl-KIt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KgQ-9B-3F4"/>
+                            <constraint firstItem="wrU-hn-f1C" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MYs-ao-c6j"/>
+                            <constraint firstAttribute="bottom" secondItem="wrU-hn-f1C" secondAttribute="bottom" id="Pl4-75-WO5"/>
+                            <constraint firstItem="8mE-lC-ppG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ai9-Qo-CvI"/>
+                            <constraint firstItem="wH2-Yl-KIt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cET-WS-VPV"/>
+                            <constraint firstItem="wrU-hn-f1C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cmP-uY-psk"/>
+                            <constraint firstItem="4HI-Yb-at8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iKn-4w-CJH"/>
+                            <constraint firstItem="wH2-Yl-KIt" firstAttribute="top" secondItem="4HI-Yb-at8" secondAttribute="bottom" constant="80" id="iWn-YA-O3d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8mE-lC-ppG" secondAttribute="trailing" constant="16" id="x8z-sn-ztk"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="2oh-Od-rlk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="100" y="2.8169014084507045"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="T8l-y6-Rot">
+            <objects>
+                <viewController id="tka-lX-oTM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hnf-Iz-2s0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="79S-ns-0PC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kes-k2-M8v">
+                                <rect key="frame" x="71" y="199" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information About The Application" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bW9-EA-aQR">
+                                <rect key="frame" x="8" y="71" width="304" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="304" id="7Wc-n5-QXN"/>
+                                    <constraint firstAttribute="height" constant="32" id="uWk-qb-yUY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="tBf-fs-eFs">
+                                <rect key="frame" x="8" y="132.5" width="304" height="303"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="304" id="Cwa-ho-gOy"/>
+                                    <constraint firstAttribute="height" constant="303" id="QZ4-xW-OGt"/>
+                                </constraints>
+                                <string key="text">Story App, is an enthralling app for young children. Highlighting interactive buttons, a colourful user interface, and valuable life lessons, the app categorizes content based on age. There are main two levels, level 1 for 4-7 year old kids and level 2 for 8-10 year old children.  Parents can actively select stories to support early literacy and cognitive skills. The integration of touch-based animations elevates the overall experience, transforming it into a magical journey of imagination and joy as you and your little ones explore the enchanting world of storytelling.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4ID-eQ-KAU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="79S-ns-0PC" firstAttribute="trailing" secondItem="4ID-eQ-KAU" secondAttribute="trailing" id="0TC-2c-2bz"/>
+                            <constraint firstItem="bW9-EA-aQR" firstAttribute="centerX" secondItem="hnf-Iz-2s0" secondAttribute="centerX" id="1ct-i8-0C7"/>
+                            <constraint firstAttribute="bottom" secondItem="79S-ns-0PC" secondAttribute="bottom" id="Lk2-Wh-clW"/>
+                            <constraint firstItem="tBf-fs-eFs" firstAttribute="centerX" secondItem="hnf-Iz-2s0" secondAttribute="centerX" id="aBl-rc-Xks"/>
+                            <constraint firstItem="79S-ns-0PC" firstAttribute="leading" secondItem="4ID-eQ-KAU" secondAttribute="leading" id="hiE-8r-hP9"/>
+                            <constraint firstItem="tBf-fs-eFs" firstAttribute="top" secondItem="bW9-EA-aQR" secondAttribute="bottom" constant="29.329999999999998" id="qFx-S8-VnY"/>
+                            <constraint firstItem="tBf-fs-eFs" firstAttribute="centerY" secondItem="hnf-Iz-2s0" secondAttribute="centerY" id="qYY-GW-G7V"/>
+                            <constraint firstItem="79S-ns-0PC" firstAttribute="top" secondItem="hnf-Iz-2s0" secondAttribute="top" id="szw-ad-07U"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tDJ-M0-uFf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dA7-4t-SH9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1113.7404580152672" y="734.50704225352115"/>
+        </scene>
+        <!--Page 1-->
+        <scene sceneID="Vv6-Qf-ItO">
+            <objects>
+                <viewController id="RNL-rp-gpT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dc5-gr-eKh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="BdQ-bm-irZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="gwv-y6-fdh">
+                                <rect key="frame" x="4" y="94" width="312" height="380"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="312" id="Cas-gF-fBE"/>
+                                    <constraint firstAttribute="height" constant="380" id="weT-Si-WMQ"/>
+                                </constraints>
+                                <string key="text">The Jungle Book Mowgli story is a story of a young boy who has been raised by wolves in the Jungle, since his childhood. The wolf family raised the baby as their own. The young boy Mowgli learned to take care of himself in the jungle, but his friend the black panther “Bagheera” was always nearby.  He was always prepared to protect the young boy, Mowgli. The Mowgli became part of the wolf pack, and Baloo, the old bear, and Bagheera, the black panther, taught him the law of the jungle. Mowgli’s most dangerous enemy in the jungle was Sher Khan. He was the man-eating tiger in the jungle and wanted to kill the man-cub “Mowgli” before he had a chance to become a man living in the jungle.
+
+
+The leader of the wolves said there is only one way to protect Mowgli from Sher Khan is to take him to the man’s jungle. Bagheera agreed to take Mowgli to the man’s jungle. But, when Mowgli heard this, he started crying. He said, “No! I want to stay in the jungle”. He did not listen to Bagheera and ran into the jungle. But, Mowgli was not alone in the jungle for long. Within days, he met with a jungle bear named Baloo. After a while, both Mowgli and Baloo went swimming in the river. </string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mowgli Story " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GjD-7b-6pd">
+                                <rect key="frame" x="66.5" y="34" width="187" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="UG9-1Z-uC0"/>
+                                    <constraint firstAttribute="width" constant="187" id="Xwx-ur-O0I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9ox-sG-3q1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GjD-7b-6pd" firstAttribute="centerX" secondItem="Dc5-gr-eKh" secondAttribute="centerX" id="0RU-NS-0i9"/>
+                            <constraint firstItem="BdQ-bm-irZ" firstAttribute="trailing" secondItem="9ox-sG-3q1" secondAttribute="trailing" id="9CC-eV-ngj"/>
+                            <constraint firstItem="BdQ-bm-irZ" firstAttribute="leading" secondItem="9ox-sG-3q1" secondAttribute="leading" id="A5P-qz-MJA"/>
+                            <constraint firstItem="gwv-y6-fdh" firstAttribute="centerX" secondItem="Dc5-gr-eKh" secondAttribute="centerX" id="WCx-UZ-qzi"/>
+                            <constraint firstAttribute="bottom" secondItem="BdQ-bm-irZ" secondAttribute="bottom" id="eo5-9G-XBA"/>
+                            <constraint firstItem="gwv-y6-fdh" firstAttribute="top" secondItem="GjD-7b-6pd" secondAttribute="bottom" constant="34" id="jnS-am-Ah7"/>
+                            <constraint firstItem="gwv-y6-fdh" firstAttribute="centerY" secondItem="Dc5-gr-eKh" secondAttribute="centerY" id="mKn-gL-aYL"/>
+                            <constraint firstItem="BdQ-bm-irZ" firstAttribute="top" secondItem="Dc5-gr-eKh" secondAttribute="top" id="pBA-Ze-Mpb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page 1" id="CAX-3S-EGQ">
+                        <barButtonItem key="rightBarButtonItem" title="Next Page" id="05I-MR-kB0">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="xOS-ib-lcL" kind="show" id="vUC-CG-GgK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DUy-vT-0G2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2024" y="280"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NZj-pS-KUq">
+            <objects>
+                <viewController id="5sY-RB-fHv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ntV-ny-9uh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="GSj-fo-OSG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pX8-UA-KCg">
+                                <rect key="frame" x="85" y="264" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Jnu-Wk-ty4"/>
+                                    <constraint firstAttribute="width" constant="150" id="bWn-aF-xqP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Mowgli Story ">
+                                    <color key="baseForegroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                    <color key="baseBackgroundColor" red="0.34901960780000002" green="0.2666666667" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="RNL-rp-gpT" kind="show" id="Gwa-EP-mLA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NXU-Oe-Hks"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GSj-fo-OSG" firstAttribute="trailing" secondItem="NXU-Oe-Hks" secondAttribute="trailing" id="8Ab-Ni-zNn"/>
+                            <constraint firstAttribute="bottom" secondItem="GSj-fo-OSG" secondAttribute="bottom" id="COI-gQ-BR5"/>
+                            <constraint firstItem="GSj-fo-OSG" firstAttribute="leading" secondItem="NXU-Oe-Hks" secondAttribute="leading" id="TV1-EK-m4N"/>
+                            <constraint firstItem="GSj-fo-OSG" firstAttribute="top" secondItem="ntV-ny-9uh" secondAttribute="top" id="UIM-hT-sIN"/>
+                            <constraint firstItem="pX8-UA-KCg" firstAttribute="centerX" secondItem="ntV-ny-9uh" secondAttribute="centerX" id="cCs-6J-wa5"/>
+                            <constraint firstItem="pX8-UA-KCg" firstAttribute="centerY" secondItem="ntV-ny-9uh" secondAttribute="centerY" id="fkF-j5-Oth"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ui4-rQ-GFM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hax-s0-aRw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1115" y="3"/>
+        </scene>
+        <!--Page 1-->
+        <scene sceneID="d80-be-v5T">
+            <objects>
+                <viewController id="Uhx-yE-mVS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wKM-1g-OCw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="OdY-6P-wn5">
+                                <rect key="frame" x="0.0" y="-1" width="428" height="926"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="OH9-2A-qc6">
+                                <rect key="frame" x="4" y="149.5" width="312" height="269"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="269" id="A8F-Ub-2gf"/>
+                                    <constraint firstAttribute="width" constant="312" id="drc-fQ-0XO"/>
+                                </constraints>
+                                <string key="text">Once upon a time, beside a lake, there lived a tortoise and two geese who were great friends. As the lake was drying, the geese decided to migrate to a new place. The tortoise also wanted to move with them, but he couldn’t fly, and so he pleaded the geese to take him with them. After trying really hard to convince them, finally, the geese agreed. They held a stick with their beaks and asked the tortoise to hold the stick with his mouth, warning him to not open his mouth and let go of the stick.
+
+As they flew high, some onlookers thought that the tortoise was kidnapped and commented: “Oh, the poor tortoise!” This angered the tortoise and he immediately opened his mouth to say something back. As soon as he did, he fell to the ground and died.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Tortoise and the Geese" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQC-SH-u8y">
+                                <rect key="frame" x="4" y="42.5" width="312" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="2fx-XJ-LcT"/>
+                                    <constraint firstAttribute="width" constant="312" id="neR-zB-2kd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="emg-GY-Kd1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OH9-2A-qc6" firstAttribute="top" secondItem="FQC-SH-u8y" secondAttribute="bottom" constant="85" id="DII-wf-tMC"/>
+                            <constraint firstItem="FQC-SH-u8y" firstAttribute="centerX" secondItem="wKM-1g-OCw" secondAttribute="centerX" id="fYJ-oD-iGB"/>
+                            <constraint firstItem="OH9-2A-qc6" firstAttribute="centerY" secondItem="wKM-1g-OCw" secondAttribute="centerY" id="gRg-p4-eVZ"/>
+                            <constraint firstItem="OH9-2A-qc6" firstAttribute="centerX" secondItem="wKM-1g-OCw" secondAttribute="centerX" id="muU-d0-r1M"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page 1" id="5fO-lJ-dkO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="veP-4P-jma" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2024" y="-432"/>
+        </scene>
+        <!--Page 2-->
+        <scene sceneID="byZ-2i-tEo">
+            <objects>
+                <viewController id="xOS-ib-lcL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zk8-Oa-N2x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="kqb-Mq-Ut5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Dsp-XX-xtM">
+                                <rect key="frame" x="4" y="94" width="312" height="380"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="380" id="Mb0-Rg-LIj"/>
+                                    <constraint firstAttribute="width" constant="312" id="eqC-1z-gPO"/>
+                                </constraints>
+                                <string key="text">One day, a monkey took Mowgli to the prisoner who lived in an abandoned city in the Jungle. Both Baloo and Bagheera get help from the Kaa, the Python and rescue him.  As the Mowgli got older he was in great danger from Sher Khan. The one thing that Sher Khan was afraid of in the Jungle was a fire.  So, the Mowgli decided to go to a nearby village and decided to steal a pot with a fire in it. Mowgli used fire to fight with Sher Khan. He knew that he would have to kill Sher Khan to be safe in the Jungle. 
+
+
+As Mowgli gets older, the other animals in the jungle realise that he can’t live with them in the Jungle as a grown man. Mowgli decided to return to the village where he was adopted by a family. But Sher Khan found him. This time, Mowgli killed Sher Khan. But, the villagers were afraid of Mowgli, so they chased him away and he returned to live in the Jungle.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="b35-vg-00y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kqb-Mq-Ut5" secondAttribute="bottom" id="IAm-e7-v0q"/>
+                            <constraint firstItem="kqb-Mq-Ut5" firstAttribute="top" secondItem="Zk8-Oa-N2x" secondAttribute="top" id="IBd-qS-Vad"/>
+                            <constraint firstItem="kqb-Mq-Ut5" firstAttribute="leading" secondItem="b35-vg-00y" secondAttribute="leading" id="N8K-UU-XrF"/>
+                            <constraint firstItem="kqb-Mq-Ut5" firstAttribute="trailing" secondItem="b35-vg-00y" secondAttribute="trailing" id="csc-iN-gHB"/>
+                            <constraint firstItem="Dsp-XX-xtM" firstAttribute="centerX" secondItem="Zk8-Oa-N2x" secondAttribute="centerX" id="ibR-Sv-daZ"/>
+                            <constraint firstItem="Dsp-XX-xtM" firstAttribute="centerY" secondItem="Zk8-Oa-N2x" secondAttribute="centerY" id="pwv-qW-xxy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page 2" id="izv-0s-svV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aHh-Rn-DGS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2801" y="280"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1" width="6109" height="4073"/>
+        <image name="2" width="5760" height="3840"/>
+        <image name="3" width="4433" height="7880"/>
+        <image name="4" width="7200" height="4800"/>
+        <image name="5" width="768" height="1663"/>
+        <image name="6" width="2048" height="2048"/>
+        <image name="7" width="7200" height="4800"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
